@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Isometra&display=swap');
+/* definisi warna */
+
+body {
+    font-family: 'Isometra', serif;
+    background-color: #1D1616;
+    color: #EEEEEE;
+    padding: 0;
+    margin: 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* navigasi */
+
+.nav {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+    padding: 12px 32px;
+    border-radius: 40px;
+    align-self: center;
+}
+
+.nav a, .work-nav, .about-nav, .gallery-nav, .contact-nav {
+    text-decoration: none;
+    color: #EEEEEE;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.nav a:hover, .work-nav:hover, .about-nav:hover, .gallery-nav:hover, .contact-nav:hover {
+    color: #b0aeae;
+}
+
+/* video background */
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    overflow: hidden;
+    padding: 0px;
+    margin: 0px;
+    z-index: 2;
+}
+
+.nama {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+
+.role {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.little-info {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.blur-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    backdrop-filter: blur(15px); 
+    -webkit-backdrop-filter: blur(15px);
+    mask-image: linear-gradient(to bottom, black 0%, transparent 20%, transparent 80%, black 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 0%, transparent 20%, transparent 80%, black 100%);
+}
+
+/* video */
+
+#bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-height: 100%;
+    min-width: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    opacity: 65%;
+}
+
+/* about section */
+
+.about {
+    font-family: "Abrial Fatface", serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 25px;
+    margin: 50px;
+}
+
+img {
+    max-width: 500px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.about-content {
+    display: flex;
+    margin: 0;
+    padding: 5px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 500px;
+    border-radius: 20px;
+    background-color: #5a3030;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.20);
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.about-content:hover {
+    border-color: 2px solid #D84040;
+}
+
+.card-img {
+    max-width: 250px;
+    justify-content: center;
+    align-items: center;
+    border: 6px solid rgb(95, 82, 65);
+}
+.about-tittle {
+    font-size: 40px;
+    padding-bottom: 25px;
+}
+
+.about-text {
+    max-width: 610px;
+    margin-bottom: 25px;
+    font-size: .88rem;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    margin: 5px;
+}

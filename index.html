@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vellisa Putri | UI/UX Designer & Artist</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+            <!-- navigasi -->
+    <nav class="nav">
+        <div class="nav_link">
+            <a class="work-nav" href="#work">Work</a>
+            <a class="about-nav" href="#about">About</a>
+            <a class="gallery-nav" href="#gallery">Gallery</a>
+            <a class="contact-nav" href="#contact">Contact</a>
+        </div>
+    </nav>
+
+
+    <!-- hero / tampilan paling atas (rencana mau dikasih video animasi) -->
+    <section class="hero" id="top">
+            <!-- video background -->
+            <div class="blur-overlay"></div>
+    <video autoplay muted loop id="bg-video">
+        <source src="background/hero-page.mp4" type="video/mp4">
+    </video>
+    <div class="hero-section">
+        <div class="nama"><h1>VELLISA</h1></div>
+        <div class="role"><p>UI/UX Designer & Illustrator</p></div>
+        <div class="little-info"><p>A student and a beginner web developer but also an artist that will continue to explore her skills.</p></div>
+    </div>
+    </section>
+    
+    <!-- Info -->
+    <section class="about" id="about">
+        <div class="about-tittle reveal">
+            <strong class="label">INTRODUCE<br><em>MYSELF</em></strong>
+        </div>
+        <div class="about-content">
+            <div class="img-card reveal">
+                <img class="card-img" src="image/ma fes.jpeg">
+            </div>
+
+        <div class="about-text">
+            <p class="big">Hi! My name is <strong>Vellisa Putri</strong>, a software enginer student that enjoys to create some piece of art by using the technology
+            to create clean and responsive design and illustration</p>
+            <p>
+                I love creating art mixed with technology to create some masterpiece
+                like an ilustration and UI/UX designes. Designing makes my life feels 
+                more lively than ever.
+            </p>
+
+            <div class="mini-info">
+                <div>
+                    <span>ROLE</span>
+                    <b>UI/UX Designer & Illustrator</b>
+                </div>
+                <div>
+                    <span>BASED IN</span>
+                    <b>Indonesia<br>Available for WorldWide</b>
+                </div>
+                <div>
+                    <span>SOFTWARE I USE</span>
+                    <b>VScode, Krita, Figma</b>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- work / project -->
+    <section class="work" id="work">
+        <div class="work-heading reveal">
+            <div>
+                <span class="label">PROJECT</span>
+            </div>
+        </div>
+
+        <div class="work-grid">
+            <article class="project reveal">
+                <div class="project">
+                    <img src="image/modul1.png" alt="Modul-1">
+                    <span>Modul No. 01</span>
+                    <p>My first try of HTML.</p>
+                    <a class="visit" href="https://modul1-vellis-smkn1kepanjen.vercel.app/" target="_blank" rel="noopener">Visit</a>
+                </div>
+            </article>
+
+            <article class="project reveal">
+                <div class="project">
+                    <img src="image/modul2.png" alt="Modul-2">
+                    <span>Modul No. 02</span>
+                    <p>My seccond try of HTML but mixed with CSS</p>
+                    <a class="visit" href="https://tugas2-vellis-smkn1kepanjen.vercel.app/" target="_blank" rel="noopener">Visit</a>
+                </div>
+            </article>
+
+            <article class="project reveal">
+                <div class="project">
+                    <img src="image/modul3.png" alt="Modul-3">
+                    <span>Modul No. 03</span>
+                    <p>My third try of HTML but mixed with CSS and JavaScript</p>
+                    <a class="visit" href="https://tugas3-vellis-smkn1kepanjen.vercel.app/" target="_blank" rel="noopener">Visit</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+        <div>✦ DRAW ✦ DESIGN ✦ CREATE ✦ IMAGINE ✦</div>
+    </div>
+
+    <!-- art work -->
+
+    <section class="art" id="gallery">
+        <div class="art-heading reveal">
+            <div>
+                <span class="label">ART WORK</span>
+            </div>
+        </div>
+
+        <!-- popup 1 -->
+        <button class="popup-art" id="artbtn">
+            <img src="image/jacob.png" alt="Half Body Illustration">
+            <p>Jacob Illustration</p>
+        </button>
+
+        <div id="art" class="art-popup">
+            <div class="art-full">
+                <div class="art-full">
+                    <span class="close"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x preview-icon"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg></span>
+                    <img src="image/jacob.png" alt="Half Body Illustration">
+                    <p>Character name: "Jacob"</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- popup 2 -->
+        <button class="popup-art" id="artbtn">
+            <img src="image/collab art.png" alt="The one who lasts the longest without blinking wins.">
+            <p>"The one who lasts the longest without blinking wins."</p>
+        </button>
+
+        <div id="art" class="art-popup">
+            <div class="art-full">
+                <div class="art-full">
+                    <span class="close"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x preview-icon"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg></span>
+                    <img src="image/collab art.png" alt="The one who lasts the longest without blinking wins.">
+                    <p>"The one who lasts the longest without blinking wins."</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- popup 3 -->
+
+        <button class="popup-art" id="artbtn">
+            <img src="image/Trends.png" alt="Trends.">
+            <p>"Trends."</p>
+        </button>
+
+        <div id="art" class="art-popup">
+            <div class="art-full">
+                <div class="art-full">
+                    <span class="close"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x preview-icon"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg></span>
+                    <img src="image/Trends.png" alt="Trends.">
+                    <p>"Trends."</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- popup 4 -->
+
+        <button class="popup-art" id="artbtn">
+            <img src="image/pantalone.png" alt="Fan Art.">
+            <p>"Trends."</p>
+        </button>
+
+        <div id="art" class="art-popup">
+            <div class="art-full">
+                <div class="art-full">
+                    <span class="close"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x preview-icon"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg></span>
+                    <img src="image/pantalone.png" alt="Fan Art.">
+                    <p>"Fan art."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact -->
+    
+    <section class="contact" id="contact">
+        <div class="contact-card reveal">
+            <h2 class="label">Let's create something!</h2>
+            <a href="mailto:vellisaputri30@gmail.com" class="mail">vellisaputri30@gmail.com</a>
+        </div>
+
+        <div class="social">
+            <a href="https://www.instagram.com/pell_shaa26/" target="_blank" rel="noopener">Instagram</a>
+            <a href="https://github.com/VellisaPutri90" target="_blank" rel="noopener">GitHub</a>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
