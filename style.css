@@ -345,3 +345,76 @@ img {
 hr {
     width: 100px;
 }
+
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    background-color: #000000;
+    border-top: 5px dashed white;
+    border-bottom: 5px dashed white;
+    padding: 20px 0;
+}
+
+.marquee {
+    display: inline-block;
+    width: 100%;
+    color: #EEEEEE;
+    font-size: 24px;
+    animation: marquee 8s linear infinite;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.art {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.art-heading {
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    font-size: 40px;
+    margin: 10px;
+    border-bottom: 1px solid white;
+}
+
+.popup-art {
+    width: 400px;
+    overflow: hidden;
+    padding: 20px;
+    margin: 20px;
+    background-color: #000000;
+    border: 2px solid white;
+    color: white;
+    font-family: "IM Fell DW Pica", serif;
+}
+
+.art-img {
+    width: fit-content;
+}
+
+.art-popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #EEEEEE;
+    border: 2px solid black;
+}
