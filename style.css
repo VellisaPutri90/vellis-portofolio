@@ -566,6 +566,7 @@ hr {
 
 .top {
     text-decoration: none;
+    font-family: "IM Fell DW Pica", serif;
     color: white;
     padding: 10px;
     margin: 10px;
@@ -575,11 +576,26 @@ hr {
     color: #776e6e;
 }
 
-/* ================================================== */
-/* MEDIA QUERIES FOR RESPONSIVE DESIGN                */
-/* ================================================== */
+/* song */
 
-/* --- Tablets and Medium Screens (Max-Width: 1024px) --- */
+.song {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+}
+
+.song-title {
+    display: flex;
+    font-family: "IM Fell DW Pica", serif;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+
+/* --- Tablets and Medium Screens  --- */
 @media screen and (max-width: 1024px) {
     .mini-info {
         grid-template-columns: repeat(2, 1fr);
@@ -611,6 +627,10 @@ hr {
     .about-tittle {
         width: auto;
         text-align: center;
+    }
+    
+    .song {
+        flex-direction: column;
     }
 }
 

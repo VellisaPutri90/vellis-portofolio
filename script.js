@@ -16,3 +16,6 @@ document.querySelectorAll(".popup-art").forEach(btn => {
         }
     }
 });
+
+const audio = document.getElementById("myAudio");
+audio.volume = 0.3;
