@@ -594,6 +594,14 @@ hr {
     margin: 10px;
 }
 
+.credit {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-family: "IM Fell DW Pica", serif;
+}
+
 
 /* --- Tablets and Medium Screens  --- */
 @media screen and (max-width: 1024px) {
