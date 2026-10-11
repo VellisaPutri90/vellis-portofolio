@@ -3,7 +3,7 @@ document.querySelectorAll(".popup-art").forEach(btn => {
     const closeBtn = popup.querySelector(".close");
 
     btn.onclick = function() {
-        popup.style.display = "flex"; // Changed to flex to center the modal
+        popup.style.display = "flex";
     }
 
     closeBtn.onclick = function() {
